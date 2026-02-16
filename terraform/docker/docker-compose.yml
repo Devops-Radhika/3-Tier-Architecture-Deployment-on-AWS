@@ -1,0 +1,10 @@
+```yaml
+version: '3'
+services:
+frontend:
+image: nginx:latest
+ports: ["80:80"]
+backend:
+image: mysql:latest
+environment:
+MYSQL_ROOT_PASSWORD: password
